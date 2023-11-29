@@ -5,7 +5,7 @@ const path = require("path");
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
   output: {
-    publicPath: '/',
+    publicPath: 'auto',
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
