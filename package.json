@@ -6,6 +6,7 @@
     "build:dev": "rm -rf dist && env-cmd -f .env.dev webpack --mode production",
     "build:package": "tsc && webpack build --mode development",
     "build:start": "env-cmd -f .env.dev cd dist && PORT=3000 npx serve",
+    "start": "webpack serve --mode production",
     "start:dev": "env-cmd -f .env.dev webpack serve --mode production",
     "start:local": "env-cmd -f .env.local webpack serve --open --mode development",
     "start:live": "webpack serve --open --mode production --live-reload --hot"
