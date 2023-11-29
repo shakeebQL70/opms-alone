@@ -50,7 +50,7 @@ module.exports = (_, argv) => ({
       name: "opms",
       filename: "remoteEntry.js",
       remotes: {
-        AXIOS: `axios@${process.env.REMOTE_PATH_AXIOS}`,
+        // AXIOS: `axios@${process.env.REMOTE_PATH_AXIOS}`,
         UI: `ui@${process.env.REMOTE_PATH_UI}`,
         SUPER: `SuperApp@${process.env.REMOTE_PATH_SUPER_APP}`,
       },
