@@ -10,16 +10,11 @@ import {
 import { EditButton, ViewButton, ExportTableButton } from "UI/button";
 import { TableRowsSkeleton } from "UI/contentSkeleton";
 import View from "./View";
-import { useProjectStore } from "SUPER/store";
+// import { useProjectStore } from "SUPER/store";
 import EditDetails from "./EditDetails";
 
 const ProjectList = () => {
   // const projects:any = useProjectStore((state: any) => state)
-
-  console.log(
-    "useProjectStore((state: any) => state)",
-    useProjectStore((state: any) => state)
-  );
 
   const projects: any = {};
   const {
